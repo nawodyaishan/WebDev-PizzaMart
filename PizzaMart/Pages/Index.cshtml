@@ -5,13 +5,18 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4 text-capitalize">Welcome to PizzaMart</h1>
-    <h2 class="fst-italic text-dark">"A pizza lover would be like a match made in <br>pizza heaven"</h2>
-    <h3 class="blockquote">Let's Begin Your Pizza Journey</h3>
-    <img class="img-thumbnail" src="~/images/pizzatime.jpeg" alt="Welcome Image"/>
+    <div class="mainText">
+        <h1 class="display-4 text-capitalize">Welcome to <b>Pizza Mart</b></h1>
+        <h2 class="fst-italic text-dark">"A pizza lover would be like a match made in <br>pizza heaven"</h2>
+    </div>
+    <div>
+        <img class="mainImg" src="~/images/pizzatime.jpeg" alt="Welcome Image"/>
+    </div>
     <br/>
-    
-     <a class="btn btn-primary mt-1" asp-area="" asp-page="/Checkout/ThankYou">See Availables Tastes</a>
-    
-    
+    <div class="card-footer">
+        <h3>Let's Begin Your Pizza Journey</h3>
+        <a class="btn btn-primary mt-1" asp-area="" asp-page="/Checkout/ThankYou">Lesss Gooooo</a>
+    </div>
+
+
 </div>
