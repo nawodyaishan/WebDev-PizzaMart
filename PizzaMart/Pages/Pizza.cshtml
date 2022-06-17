@@ -1,5 +1,5 @@
 @page
-@model PizzaMart.Pages.Pizza
+@model Pizza
 
 @{
 
@@ -12,9 +12,19 @@
     <title>Pizza Menu</title>
 </head>
 <body>
-<div>
-     <a class="nav-link text-dark" asp-area="" asp-page="/Forms/CustomPizza">Choose Custom Pizza</a>
-     <a class="nav-link text-dark" asp-area="" asp-page="/Checkout/Checkout">Checkout</a>
+<div class="text-center">
+    <div class="mainText">
+        <h1 class="display-4 text-capitalize">Welcome to <b>Pizza Mart</b></h1>
+        <h2 class="fst-italic text-dark">"Pizza is not a 'trend' <b>it's a way of life</b>"</h2>
+    </div>
+
+    <h4 class="fst-italic">Choose your favorite Pizza</h4>
+    <h4>Or</h4>
+    <h4 class="fst-italic">Try Our Pizza Builder</h4>
+    <p class="smallText">
+        <i>Only One Pizza Per Order</i>
+    </p>
+
 </div>
 </body>
 </html>
