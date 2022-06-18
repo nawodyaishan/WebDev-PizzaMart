@@ -7,7 +7,7 @@ namespace PizzaMart.Pages.Forms;
 
 public class CustomPizza : PageModel
 {
-    [BindProperty] public PizzasModel Pizza { get; private set; }
+    [BindProperty] public PizzasModel Pizza { get; set; }
     public float PizzaPrice { get; set; }
 
     public void OnGet()
@@ -25,6 +25,6 @@ public class CustomPizza : PageModel
         if (Pizza.Mushrooms) PizzaPrice += 3;
         if (Pizza.Tuna) PizzaPrice += 4;
 
-        return RedirectToPage("/Checkout/Checkout");
+        return RedirectToPage("/Checkout/Checkout", new {Pizza.PizzaName, PizzaPrice});
     }
 }
