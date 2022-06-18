@@ -12,7 +12,14 @@
     <title>Custom Pizza</title>
 </head>
 <body>
-<div>
+<div class="text-center container">
+    <h1>Create Your Own Pizza</h1>
+    <form method="post">
+        <input type="text" asp-for="Pizza.PizzaName" placeholder="Give Your Pizza a name....."/>
+        <button class="btn btn-primary mt-1" type="submit">
+            Order My Pizza
+        </button>
+    </form>
     <a class="nav-link text-dark" asp-area="" asp-page="/Checkout/Checkout">Checkout</a>
 </div>
 </body>

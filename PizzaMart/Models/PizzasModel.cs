@@ -1,4 +1,4 @@
-namespace PizzaMart.Model;
+namespace PizzaMart.Models;
 
 public class PizzasModel
 {
