@@ -2,7 +2,7 @@ namespace PizzaMart.Models;
 
 public class PizzasModel
 {
-    public string PizzaImageTitle { get; set; }
+    public string ImageTitle { get; set; }
     public string PizzaName { get; set; }
     public float BasePrice { get; set; } = 2;
     public bool TomatoesSauce { get; set; }

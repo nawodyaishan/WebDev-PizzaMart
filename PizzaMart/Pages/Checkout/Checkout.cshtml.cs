@@ -8,7 +8,7 @@ public class Checkout : PageModel
 {
     public string PizzaName { get; set; }
     public float PizzaPrice { get; set; }
-    public string PizzaImageTitle { get; set; }
+    public string ImageTitle { get; set; }
 
     public void OnGet()
     {
@@ -17,9 +17,9 @@ public class Checkout : PageModel
             PizzaName = "Custom";
         }
 
-        if (string.IsNullOrWhiteSpace(PizzaImageTitle))
+        if (string.IsNullOrWhiteSpace(ImageTitle))
         {
-            PizzaImageTitle = "wooden.png";
+            ImageTitle = "wooden";
         }
     }
 }
