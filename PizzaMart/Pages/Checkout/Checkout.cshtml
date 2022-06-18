@@ -2,6 +2,7 @@
 @model PizzaMart.Pages.Checkout.Checkout
 
 @{
+    var imagePath = "~/images/" + (@Model.PizzaImageTitle + ".png");
 
 }
 
@@ -13,7 +14,17 @@
 </head>
 <body>
 <div>
-    
+    <h1>Your Order</h1>
+    <div class="align-content-center"></div>
+    <div class="col-3 mx-auto mb-5">
+        <img src=@imagePath class="w-100" asp-append-version="true" alt="" src=""/>
+
+        <p>Your Order for the @Model.PizzaName is Ready !!!</p>
+        <p>Total Prize for your order is : USD @Model.PizzaPrice/=</p>
+
+        <br/>
+        <a class="btn alert-primary mt-1 mx-auto" asp-area="" asp-page="ThankYou">Confirm Order</a>
+    </div>
 </div>
 </body>
 </html>
