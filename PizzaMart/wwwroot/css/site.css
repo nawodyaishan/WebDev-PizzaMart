@@ -28,6 +28,16 @@ body {
 }
 
 .smallText {
-  text-align: right;
-  color: #4f5050;
+    text-align: right;
+    color: #4f5050;
+}
+
+.makeYourOwnDiv {
+    background: #4f5050;
+    margin: 0;
+}
+
+.makeYourOwnText {
+    margin: 100px 0 20px 0;
+    color: #dde0e3;
 }
